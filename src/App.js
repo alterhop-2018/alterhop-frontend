@@ -1,25 +1,16 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import Search from './Search';
 import './App.css';
+import '../node_modules/@blueprintjs/core/lib/css/blueprint.css';
+import '../node_modules/@blueprintjs/datetime/lib/css/blueprint-datetime.css';
+import '../node_modules/@blueprintjs/icons/lib/css/blueprint-icons.css';
+import '../node_modules/normalize.css/normalize.css';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div className="App bp3-dark">
+        <Search />
       </div>
     );
   }
